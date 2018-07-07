@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>ckeditor</title>
+	<!-- js ckeditor -->
+	<script src="ckeditor/ckeditor.js"></script>
+	<!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- style css -->
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+<body class="mt-3">
+
+ <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html#"><img src="img/jsnode.png" width="50" height="55"></a>
+        <a class="navbar-brand text-light"><h3>Javascript</h3></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar pt-5">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"><h5>Materi</h5> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="grafik.html">Grafik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datepiker.html">Datepikcer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="maps.html">Peta Lokasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tab.html">Tab</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="modal.html">Modal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datatable.html">Data Table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="timeline.html">Time Line</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="autoselect.html">Auto Select</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ckeditor.html">CKEditor</a>
+            </li>
+          </ul>
+        </nav>
+
+        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 ">
+          <section id="about" class="about">
+            <div class="container text-center mb-auto">
+            <div class="row mb-4 pt-5">
+                <div class="col text-center">
+                  <h2>CkEditor</h2>
+                </div>
+              </div>
+              	<div class="row justify-content-center pb-5">
+                	<div class="col-md-10 text-justify">
+            			<textarea name="content" id="editor1">
+			  			</textarea>
+			  		</div>
+			  	</div>
+            </div>
+          </section>
+          
+        </main>
+      </div>
+    </div>
+    <footer class="bg-dark text-white sticky-top">
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col text-center">
+            <p>
+              Copyright_Khairuel@2018.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+<script src="/js/jquery-slim.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script language="javascript">
+	CKEDITOR.replace( 'editor1', {
+	extraPlugins: 'magicline',
+	allowedContent: true
+	});
+</script>
+</body>
+</html>
